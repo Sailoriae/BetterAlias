@@ -7,6 +7,26 @@ description: Command alias system
 commands:
    bareload:
       description: Reloads the aliases.yml file
+   menu:
+      description: Ouvre le menu EagleCraft
+   new:
+      description: Ouvre le menu EagleCraft pour les nouveaux
+   cheval:
+      description: Gestion des chevaux
+   commerce:
+      description: Gestion des commerces
+   eagle:
+      description: Informations sur EagleCraft
+   creatif:
+      description: Se mettre en mode créatif
+   survie:
+      description: Se mettre en mode survie
+   grief:
+      description: Obtenir l'outil d'historique des blocs
+   quit:
+      description: Quitter un Minigame
+   changepass:
+      description: Reset d'un mot de passe AuthMe
 permissions:
     BetterAlias.reload:
       description: Allows reloading BetterAlias
