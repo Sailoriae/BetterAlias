@@ -1,6 +1,7 @@
 name: BetterAlias
 main: com.ne0nx3r0.betteralias.BetterAlias
-version: '1.5.2'
+version: ${project.version}
+api-version: ${spigot.api.version}
 database: false
 description: Command alias system
 commands:

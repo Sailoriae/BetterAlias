@@ -195,7 +195,7 @@ public class AliasManager {
 
                             return true;
                         }
-                    } else if (text.equalsIgnoreCase("handItemID")) {
+                    /*} else if (text.equalsIgnoreCase("handItemID")) {
                         if (player != null) {
                             text = new Integer(player.getItemInHand().getTypeId()).toString();
                         } else {
@@ -204,7 +204,7 @@ public class AliasManager {
                             cs.sendMessage("[BetterAlias] Line: " + ac.command);
 
                             return true;
-                        }
+                        }*/
                     } else if (text.equalsIgnoreCase("oppositeGameMode")) {
                         if (player != null) {
                             text = player.getGameMode().equals(GameMode.SURVIVAL) ? "creative" : "survival";
