@@ -187,7 +187,7 @@ public class AliasManager {
                         }
                     } else if (text.equalsIgnoreCase("handItemName")) {
                         if (player != null) {
-                            text = player.getItemInHand().getType().name();
+                            text = player.getInventory().getItemInMainHand().getType().name();
                         } else {
                             cs.sendMessage("[BetterAlias] " + ChatColor.RED + "A parameter of this alias requires a player.");
 
@@ -195,16 +195,16 @@ public class AliasManager {
 
                             return true;
                         }
-                    /*} else if (text.equalsIgnoreCase("handItemID")) {
+                    } else if (text.equalsIgnoreCase("handItemID")) {
                         if (player != null) {
-                            text = new Integer(player.getItemInHand().getTypeId()).toString();
+                            text = player.getInventory().getItemInMainHand().getType().toString().toLowerCase();
                         } else {
                             cs.sendMessage("[BetterAlias] " + ChatColor.RED + "A parameter of this alias requires a player.");
 
                             cs.sendMessage("[BetterAlias] Line: " + ac.command);
 
                             return true;
-                        }*/
+                        }
                     } else if (text.equalsIgnoreCase("oppositeGameMode")) {
                         if (player != null) {
                             text = player.getGameMode().equals(GameMode.SURVIVAL) ? "creative" : "survival";
